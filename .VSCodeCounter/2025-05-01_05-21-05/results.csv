@@ -1,0 +1,216 @@
+"filename", "language", "Markdown", "JSON with Comments", "JavaScript", "JSON", "XML", "HTML", "JavaScript JSX", "CSS", "SCSS", "Properties", "comment", "blank", "total"
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\.env", "Properties", 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 4
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\CHANGELOG.md", "Markdown", 173, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 51, 224
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\Documentation\documentation.html", "HTML", 0, 0, 0, 0, 0, 159, 0, 0, 0, 0, 10, 2, 171
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\ISSUE_TEMPLATE.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 2, 14
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\README.md", "Markdown", 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 130
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\github-assets\react.svg", "XML", 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 1, 8
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\jsconfig.json", "JSON with Comments", 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\package.json", "JSON", 0, 0, 0, 86, 0, 0, 0, 0, 0, 0, 0, 1, 87
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\public\index.html", "HTML", 0, 0, 0, 0, 0, 39, 0, 0, 0, 0, 28, 1, 68
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\public\manifest.json", "JSON", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 1, 21
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\RestControllers\Controller.js", "JavaScript", 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 3, 24
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\api\api.js", "JavaScript", 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 3, 15, 50
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\css\paper-dashboard.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 13992, 0, 0, 389, 1746, 16127
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\css\paper-dashboard.min.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 28, 1, 35
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\demo\demo.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 152, 0, 0, 0, 28, 180
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\demo\demo.js", "JavaScript", 0, 0, 2326, 0, 0, 0, 0, 0, 0, 0, 38, 177, 2541
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\_overrides.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 38, 0, 2, 10, 50
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 66, 0, 20, 16, 102
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_alerts.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 62, 0, 0, 13, 75
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_animated-buttons.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 60, 0, 1, 11, 72
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_badges.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 67, 0, 1, 8, 76
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_buttons.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 241, 0, 4, 27, 272
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_cards.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 113, 0, 0, 28, 141
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_carousel.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 1, 2, 16
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_checkboxes-radio.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 124, 0, 0, 19, 143
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_dropdown.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 422, 0, 5, 54, 481
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_example-pages.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 173, 0, 0, 30, 203
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_fixed-plugin.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 290, 0, 0, 53, 343
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_footers.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 38, 0, 0, 9, 47
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_images.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 1, 8
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_info-areas.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 145, 0, 0, 26, 171
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_inputs.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 347, 0, 2, 55, 404
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_media-queries.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_misc-extend.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 54, 0, 2, 13, 69
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_misc.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 132, 0, 3, 16, 151
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_mixins.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 2, 4, 21
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_modals.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 90, 0, 1, 8, 99
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_navbar.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 256, 0, 0, 55, 311
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_nucleo-outline.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 435, 0, 29, 103, 567
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_page-header.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 73, 0, 0, 13, 86
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_pagination.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 122, 0, 1, 18, 141
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_pills.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 126, 0, 1, 8, 135
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_popups.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 70, 0, 0, 16, 86
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_progress.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 1, 28
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_responsive.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 462, 0, 0, 89, 551
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_sections.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 478, 0, 4, 94, 576
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_sidebar-and-main-panel.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 527, 0, 3, 90, 620
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_social-buttons.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 38, 0, 1, 3, 42
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_tables.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 150, 0, 0, 24, 174
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_tabs.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 221, 0, 3, 23, 247
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_timeline.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 155, 0, 0, 35, 190
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_typography.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 148, 0, 5, 21, 174
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\_variables.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 276, 0, 19, 113, 408
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\cards\_card-background.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 57, 0, 0, 9, 66
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\cards\_card-chart.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 41, 0, 0, 8, 49
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\cards\_card-collapse.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 34, 0, 0, 6, 40
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\cards\_card-contributions.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 35, 0, 0, 8, 43
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\cards\_card-info-area.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 1, 7
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\cards\_card-lock.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 2, 12
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\cards\_card-map.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 1, 4
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\cards\_card-plain.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 4, 18
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\cards\_card-pricing.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 101, 0, 0, 11, 112
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\cards\_card-profile.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 39, 0, 0, 11, 50
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\cards\_card-signup.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 36, 0, 0, 6, 42
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\cards\_card-stats-mini.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 45, 0, 0, 9, 54
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\cards\_card-stats.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 39, 0, 0, 10, 49
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\cards\_card-subcategories.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 1, 4
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\cards\_card-tasks.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 1, 28
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\cards\_card-testimonials.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 65, 0, 0, 10, 75
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\cards\_card-user.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 41, 0, 0, 10, 51
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\mixins\_badges.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 35, 0, 0, 5, 40
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\mixins\_buttons.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 179, 0, 2, 32, 213
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\mixins\_cards.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 1, 5
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\mixins\_chartist.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 58, 0, 16, 12, 86
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\mixins\_dropdown.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 19, 0, 0, 6, 25
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\mixins\_inputs.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 204, 0, 6, 34, 244
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\mixins\_modals.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 1, 4, 20
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\mixins\_page-header.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 1, 8
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\mixins\_popovers.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 8, 30
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\mixins\_social-buttons.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 31, 0, 1, 7, 39
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\mixins\_tags.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 28, 0, 0, 2, 30
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\mixins\_transparency.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 2, 2, 9
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\mixins\_vendor-prefixes-extend.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 211, 0, 0, 28, 239
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\mixins\_vendor-prefixes.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 204, 0, 0, 25, 229
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\mixins\_wizard.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 30, 0, 5, 7, 42
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\plugins\_plugin-animate-bootstrap-notify.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 153, 0, 7, 68, 228
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\plugins\_plugin-bootstrap-select.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 356, 0, 16, 63, 435
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\plugins\_plugin-bootstrap-switch.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 226, 0, 8, 41, 275
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\plugins\_plugin-bootstrap-table.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 261, 0, 11, 59, 331
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\plugins\_plugin-card-wizard.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 230, 0, 0, 44, 274
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\plugins\_plugin-datatables.net.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 450, 0, 15, 53, 518
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\plugins\_plugin-datetimepicker.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 371, 0, 5, 8, 384
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\plugins\_plugin-fullcalendar.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 751, 0, 134, 239, 1124
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\plugins\_plugin-jasny-fileupload.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 114, 0, 0, 3, 117
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\plugins\_plugin-jquery.jvectormap.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 113, 0, 0, 23, 136
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\plugins\_plugin-nouislider.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 249, 0, 61, 28, 338
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\plugins\_plugin-perfect-scrollbar.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 104, 0, 9, 1, 114
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\plugins\_plugin-sweetalert2.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 674, 0, 0, 32, 706
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\plugins\_plugin-tagsinput.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 94, 0, 4, 15, 113
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\custom\_alerts.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 1, 7
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\custom\_badges.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 1, 1, 7
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\custom\_buttons.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 1, 15
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\custom\_cards.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 1, 15
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\custom\_dropdown.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 1, 7
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\custom\_example-pages.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 171, 0, 1, 29, 201
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\custom\_fileupload.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 150, 0, 0, 7, 157
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\custom\_fixed-plugin.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 291, 0, 0, 52, 343
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\custom\_inputs.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 1, 1, 16
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\custom\_modals.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 1, 9
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\custom\_navbar.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 1, 11
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\custom\_nucleo-outline.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 7, 1, 15
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\custom\_pills.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 130, 0, 1, 8, 139
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\custom\_responsive.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 462, 0, 0, 89, 551
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\custom\_sidebar-and-main-panel.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 533, 0, 3, 91, 627
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\custom\_tabs.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 223, 0, 3, 22, 248
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\custom\_timeline.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 1, 10
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\plugins\_plugin-nouislider.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 260, 0, 39, 2, 301
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\plugins\_plugin-react-big-calendar.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 666, 0, 11, 8, 685
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\plugins\_plugin-react-bootstrap-sweetalert.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 1, 7
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\plugins\_plugin-react-bootstrap-switch.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 230, 0, 8, 41, 279
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\plugins\_plugin-react-bootstrap-wizard.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 240, 0, 0, 42, 282
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\plugins\_plugin-react-datetime.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 310, 0, 3, 26, 339
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\plugins\_plugin-react-jvectormap.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 113, 0, 0, 23, 136
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\plugins\_plugin-react-select.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 345, 0, 10, 7, 362
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\plugins\_plugin-react-table.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 517, 0, 0, 6, 523
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\plugins\_plugin-react-tagsinput.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 90, 0, 1, 12, 103
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\assets\scss\paper-dashboard\react\react-differences.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 2, 2, 31
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\components\CustomUpload\ImageUpload.js", "JavaScript", 0, 0, 69, 0, 0, 0, 0, 0, 0, 0, 4, 7, 80
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\components\CustomUpload\PictureUpload.js", "JavaScript", 0, 0, 33, 0, 0, 0, 0, 0, 0, 0, 3, 5, 41
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\components\FixedPlugin\FixedPlugin.js", "JavaScript", 0, 0, 168, 0, 0, 0, 0, 0, 0, 0, 1, 5, 174
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\components\Footer\Footer.js", "JavaScript", 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 2, 5, 31
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\components\Navbars\AdminNavbar.js", "JavaScript", 0, 0, 154, 0, 0, 0, 0, 0, 0, 0, 63, 7, 224
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\components\Navbars\AuthNavbar.js", "JavaScript", 0, 0, 58, 0, 0, 0, 0, 0, 0, 0, 4, 6, 68
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\components\ReactTable\ReactTable.js", "JavaScript", 0, 0, 229, 0, 0, 0, 0, 0, 0, 0, 23, 12, 264
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\components\Sidebar\Sidebar.js", "JavaScript", 0, 0, 169, 0, 0, 0, 0, 0, 0, 0, 43, 18, 230
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\components\Sidebar\sidebar.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 1, 8, 31
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\context\AuthContext.js", "JavaScript", 0, 0, 37, 0, 0, 0, 0, 0, 0, 0, 1, 10, 48
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\hooks\useNotifications.js", "JavaScript", 0, 0, 28, 0, 0, 0, 0, 0, 0, 0, 1, 3, 32
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\index.js", "JavaScript", 0, 0, 29, 0, 0, 0, 0, 0, 0, 0, 0, 5, 34
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\layouts\Admin.js", "JavaScript", 0, 0, 75, 0, 0, 0, 0, 0, 0, 0, 9, 11, 95
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\layouts\Auth.js", "JavaScript", 0, 0, 46, 0, 0, 0, 0, 0, 0, 0, 1, 7, 54
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\logo-white.svg", "XML", 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 1, 8
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\logo.svg", "XML", 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 1, 8
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\routes.js", "JavaScript", 0, 0, 154, 0, 0, 0, 0, 0, 0, 0, 0, 3, 157
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\routes\AppRoutes.js", "JavaScript", 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 1, 5, 28
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\routes\PrivateRoute.js", "JavaScript", 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 1, 3, 12
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\routes\ProtectedRouteByRole.js", "JavaScript", 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 7, 19
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\styles\commonStyles.js", "JavaScript", 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 1, 2, 20
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\utils\ErrorHandler.js", "JavaScript", 0, 0, 39, 0, 0, 0, 0, 0, 0, 0, 1, 2, 42
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\utils\roleUtils.js", "JavaScript", 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\variables\charts.js", "JavaScript", 0, 0, 798, 0, 0, 0, 0, 0, 0, 0, 56, 33, 887
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\variables\general.js", "JavaScript", 0, 0, 120, 0, 0, 0, 0, 0, 0, 0, 9, 10, 139
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\variables\icons.js", "JavaScript", 0, 0, 403, 0, 0, 0, 0, 0, 0, 0, 0, 3, 406
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\Calendar.js", "JavaScript", 0, 0, 80, 0, 0, 0, 0, 0, 0, 0, 4, 7, 91
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\Charts.js", "JavaScript", 0, 0, 176, 0, 0, 0, 0, 0, 0, 0, 3, 6, 185
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\Dashboard.js", "JavaScript", 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 0, 8, 93
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\Widgets.js", "JavaScript", 0, 0, 525, 0, 0, 0, 0, 0, 0, 0, 1, 5, 531
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\components\Buttons.js", "JavaScript", 0, 0, 654, 0, 0, 0, 0, 0, 0, 0, 1, 5, 660
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\components\GridSystem.js", "JavaScript", 0, 0, 301, 0, 0, 0, 0, 0, 0, 0, 1, 5, 307
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\components\Icons.js", "JavaScript", 0, 0, 40, 0, 0, 0, 0, 0, 0, 0, 0, 5, 45
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\components\Notifications.js", "JavaScript", 0, 0, 478, 0, 0, 0, 0, 0, 0, 0, 2, 5, 485
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\components\Panels.js", "JavaScript", 0, 0, 592, 0, 0, 0, 0, 0, 0, 0, 3, 5, 600
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\components\SweetAlert.js", "JavaScript", 0, 0, 347, 0, 0, 0, 0, 0, 0, 0, 3, 5, 355
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\components\Typography.js", "JavaScript", 0, 0, 133, 0, 0, 0, 0, 0, 0, 0, 1, 5, 139
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\forms\ExtendedForms.js", "JavaScript", 0, 0, 370, 0, 0, 0, 0, 0, 0, 0, 7, 6, 383
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\forms\RegularForms.js", "JavaScript", 0, 0, 384, 0, 0, 0, 0, 0, 0, 0, 1, 5, 390
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\forms\ValidationForms.js", "JavaScript", 0, 0, 659, 0, 0, 0, 0, 0, 0, 0, 10, 5, 674
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\forms\Wizard.js", "JavaScript", 0, 0, 45, 0, 0, 0, 0, 0, 0, 0, 3, 7, 55
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\forms\WizardSteps\Step1.js", "JavaScript", 0, 0, 173, 0, 0, 0, 0, 0, 0, 0, 4, 5, 182
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\forms\WizardSteps\Step2.js", "JavaScript", 0, 0, 86, 0, 0, 0, 0, 0, 0, 0, 1, 5, 92
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\forms\WizardSteps\Step3.js", "JavaScript", 0, 0, 69, 0, 0, 0, 0, 0, 0, 0, 2, 5, 76
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\maps\FullScreenMap.js", "JavaScript", 0, 0, 120, 0, 0, 0, 0, 0, 0, 0, 0, 10, 130
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\maps\GoogleMaps.js", "JavaScript", 0, 0, 206, 0, 0, 0, 0, 0, 0, 0, 1, 23, 230
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\maps\VectorMap.js", "JavaScript", 0, 0, 83, 0, 0, 0, 0, 0, 0, 0, 2, 6, 91
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Bookings\ClasePorDia.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 179, 0, 0, 0, 0, 14, 193
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Bookings\Details\ClientDetail.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 275, 0, 0, 0, 0, 17, 292
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Bookings\MisClases.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 239, 0, 0, 0, 1, 12, 252
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Bookings\app.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 40, 0, 0, 0, 10, 50
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Bookings\modals\CancelarReservaModal.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 61, 0, 0, 0, 0, 5, 66
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Bookings\modals\DetailModal.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 26, 0, 0, 0, 0, 3, 29
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Bookings\modals\RegistrarAsistenciaModal.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 136, 0, 0, 0, 0, 15, 151
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Bookings\service\bookingService.js", "JavaScript", 0, 0, 87, 0, 0, 0, 0, 0, 0, 0, 0, 13, 100
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Clients\CargaMasivaDesdeExcel.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 236, 0, 0, 0, 1, 18, 255
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Clients\ClientesEnRiesgo.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 145, 0, 0, 0, 0, 11, 156
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Clients\Clients.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 226, 0, 0, 0, 0, 14, 240
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Clients\ComprasPromociones.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 249, 0, 0, 0, 1, 15, 265
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Clients\ControlClientes.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 119, 0, 0, 0, 0, 10, 129
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Clients\Details\ClientDetail.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 545, 0, 0, 0, 2, 45, 592
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Clients\Details\ClientDetailCoach.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 49, 0, 0, 0, 0, 7, 56
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Clients\IntencionDePlanes.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 152, 0, 0, 0, 0, 12, 164
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Clients\Promotions.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 221, 0, 0, 0, 1, 17, 239
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Clients\modals\DetailModal.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 26, 0, 0, 0, 0, 3, 29
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Clients\service\clientsService.js", "JavaScript", 0, 0, 76, 0, 0, 0, 0, 0, 0, 0, 0, 13, 89
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Clients\service\membershipService.js", "JavaScript", 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 2, 13
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Clients\service\paymentsService.js", "JavaScript", 0, 0, 57, 0, 0, 0, 0, 0, 0, 0, 0, 9, 66
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Clients\service\planIntentService.js", "JavaScript", 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 3, 9
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Clients\service\promotionsService.js", "JavaScript", 0, 0, 89, 0, 0, 0, 0, 0, 0, 0, 0, 11, 100
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Dashboard\AttendanceChart.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 40, 0, 0, 0, 0, 6, 46
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Dashboard\ClassTypeChart.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 39, 0, 0, 0, 0, 6, 45
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Dashboard\DashboardStats.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 152, 0, 0, 0, 0, 14, 166
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Dashboard\MostUsedMembershipsChart.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 46, 0, 0, 0, 0, 7, 53
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Dashboard\RevenueChart.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 54, 0, 0, 0, 0, 9, 63
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\LoadingSpinner.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 1, 3, 13
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\LockScreen.js", "JavaScript", 0, 0, 65, 0, 0, 0, 0, 0, 0, 0, 1, 5, 71
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Login.js", "JavaScript", 0, 0, 120, 0, 0, 0, 0, 0, 0, 0, 0, 11, 131
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Payments\ResumenIngresos.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 168, 0, 0, 0, 0, 9, 177
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Payments\service\paymentsService.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 18, 0, 0, 0, 0, 7, 25
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Register.js", "JavaScript", 0, 0, 147, 0, 0, 0, 0, 0, 0, 0, 1, 5, 153
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\Timeline.js", "JavaScript", 0, 0, 162, 0, 0, 0, 0, 0, 0, 0, 1, 5, 168
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\pages\UserProfile.js", "JavaScript", 0, 0, 292, 0, 0, 0, 0, 0, 0, 0, 1, 5, 298
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\tables\ExtendedTables.js", "JavaScript", 0, 0, 699, 0, 0, 0, 0, 0, 0, 0, 1, 5, 705
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\tables\ReactTables.js", "JavaScript", 0, 0, 182, 0, 0, 0, 0, 0, 0, 0, 8, 7, 197
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\tables\RegularTables.js", "JavaScript", 0, 0, 213, 0, 0, 0, 0, 0, 0, 0, 1, 5, 219
+"d:\Eduardo\Solv\demos\vile-front\vile-admin\src\views\utils\DateUtil.js", "JavaScript", 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 5, 8, 39
+"Total", "-", 253, 9, 12918, 106, 21, 198, 3410, 14212, 16712, 2, 1314, 5344, 54499

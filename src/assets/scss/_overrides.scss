@@ -1,0 +1,50 @@
+// Estilos personalizados para ReactTable
+
+.ReactTable .-pagination .-btn {
+    background-color: #7F6552 !important;
+    color: white !important;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+  
+    &:hover {
+      background-color: darken(#7F6552, 5%);
+    }
+  
+    &:disabled {
+      background-color: lighten(#7F6552, 10%);
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+  }
+  
+  // Cambiar color de los selects de react-select
+  .react-select__control {
+    background-color: white !important;
+    border-color: #7F6552 !important;
+    color: #7F6552 !important;
+  }
+  
+  .react-select__single-value {
+    color: #7F6552 !important;
+  }
+  
+  .react-select__menu {
+    background-color: white !important;
+    color: #7F6552 !important;
+  }
+  
+  .react-select__option {
+    background-color: white !important;
+    color: #7F6552 !important;
+  
+    &:hover {
+      background-color: darken(#d1dfcc, 5%) !important;
+    }
+  
+    &.react-select__option--is-selected {
+      background-color: darken(white, 10%) !important;
+    }
+  }
+  

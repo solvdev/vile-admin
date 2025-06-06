@@ -1,0 +1,30 @@
+.custom-sidebar {
+    background-color: #97877b !important;
+
+    .sidebar-wrapper {
+        background-color: #97877b!important;
+    }
+
+    .nav li>a {
+        color: #ffffff;
+
+        &:hover {
+            background-color: #97877b;
+        }
+    }
+
+    .logo,
+    .user {
+        background-color: #97877b !important;
+    }
+}
+
+.custom-sidebar .nav li.active>a,
+.custom-sidebar .nav li.active>a i,
+.custom-sidebar .nav li.active>a p {
+    color: #ffffff !important;
+    /* o cualquier color que quieras, como blanco */
+    font-weight: bold;
+}
+
+

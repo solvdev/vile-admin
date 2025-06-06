@@ -1,0 +1,50 @@
+.btn-registrar {
+    background-color: #8AB382 !important;
+    border: none;
+    color: white !important;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-registrar:hover {
+    background-color: #7CA672 !important;
+    color: white !important;
+  }
+  
+  .btn-cerrar {
+    background-color: #E85A4F !important;
+    border: none;
+    color: white !important;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-cerrar:hover {
+    background-color: #D94E44 !important;
+    color: white !important;
+  }
+
+  .btn-anadir {
+    background-color: #5d8f51 !important;
+    border: none;
+    color: white !important;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-anadir:hover {
+    background-color: #7CA672 !important;
+    color: white !important;
+  }
+
+  .btn-importar {
+    background-color: #3780d4 !important;
+    border: none;
+    color: white !important;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-importar:hover {
+    background-color: #5a91cf !important;
+    color: white !important;
+  }
+  
+
+  
