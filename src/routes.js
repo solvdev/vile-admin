@@ -15,6 +15,7 @@ import PromotionsPanel from "views/pages/Clients/ComprasPromociones";
 import PaymentsRegister from "views/pages/Payments/RegistroPagos";
 import CierresSemanales from "views/pages/Payments/CierresSemanales";
 import AllSchedulesByDay from "views/pages/Bookings/Horarios";
+import PagosTabla from "views/pages/Payments/PagosTabla";
 const routes = [
   {
     path: "/dashboard",
@@ -151,6 +152,14 @@ const routes = [
         name: "Resumen de Ingresos",
         mini: "HA",
         component: <ResumenIngresos />,
+        layout: "/admin",
+        roles: ["admin"],
+      },
+      {
+        path: "/pagos",
+        name: "Pagos",
+        mini: "P",
+        component: <PagosTabla />,
         layout: "/admin",
         roles: ["admin"],
       },
