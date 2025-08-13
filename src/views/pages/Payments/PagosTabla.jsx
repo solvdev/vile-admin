@@ -6,7 +6,7 @@ import {
 } from "reactstrap";
 import { Toaster, toast } from "react-hot-toast";
 import ReactTable from "components/ReactTable/ReactTable";
-import { getPaymentsByMonth } from "./service/paymentService";
+import { getPaymentsByMonth, getPaymentsByDate } from "./service/paymentService";
 import EditPaymentModal from "./modal/EditPaymentModal";
 
 const monthNames = [
@@ -25,8 +25,11 @@ export default function PagosTabla() {
     const [selectedPayment, setSelectedPayment] = useState(null);
     const [mesesDisponibles, setMesesDisponibles] = useState([]);
     const [filtroMes, setFiltroMes] = useState("");
+    const [filtroDia, setFiltroDia] = useState("");
+    const [modoFiltro, setModoFiltro] = useState("mes");
     const [isLoadedSuccess, setIsLoadedSuccess] = useState(false);
     const [error, setError] = useState(null);
+    const [mostrarAuditoria, setMostrarAuditoria] = useState(false);
 
     const fetchMeses = () => {
         const now = new Date();
@@ -43,12 +46,14 @@ export default function PagosTabla() {
         setMesesDisponibles(meses);
     };
 
-    const fetchPagos = async (mes) => {
-        if (!mes) return;
+    const fetchPagos = async (valor, modo = "mes") => {
+        if (!valor) return;
         try {
             setLoading(true);
             setError(null);
-            const data = await getPaymentsByMonth(mes);
+            const data = modo === "mes"
+                ? await getPaymentsByMonth(valor)
+                : await getPaymentsByDate(valor);
             setPagos(data);
             setIsLoadedSuccess(true);
         } catch (err) {
@@ -67,22 +72,9 @@ export default function PagosTabla() {
         fetchPagos(defaultMonth);
     }, []);
 
-    const handleVer = (row) => {
-        toast(`Pago #${row.id} — Q${row.amount}`, { icon: "💳" });
-    };
-
     const handleEditar = (row) => {
         setSelectedPayment(row);
         setEditModalOpen(true);
-    };
-
-    const handleChangeMes = (value) => {
-        setFiltroMes(value);
-        if (value) {
-            fetchPagos(value);
-        } else {
-            setPagos([]); // limpia la tabla si no hay filtro
-        }
     };
 
     const columns = [
@@ -90,26 +82,66 @@ export default function PagosTabla() {
         {
             Header: "Cliente",
             accessor: (row) => `${row.client}`,
-            id: "cliente"
+            id: "cliente",
         },
         { Header: "Plan", accessor: "membership.name" },
         { Header: "Monto (Q)", accessor: "amount" },
         { Header: "Metodo de Pago", accessor: "payment_method" },
         {
             Header: "Fecha de Pago",
-            accessor: (row) => row.date_paid?.split("T")[0]
+            accessor: (row) => row.date_paid?.split("T")[0] || "—",
+            id: "date_paid",
         },
-        { Header: "Válido Hasta", accessor: "valid_until" },
+        {
+            Header: "Válido Hasta",
+            accessor: (row) => row.valid_until || "—",
+            id: "valid_until",
+        },
+        ...(mostrarAuditoria
+            ? [
+                {
+                    Header: "Creado por",
+                    accessor: (row) => row.created_by || "admin",
+                    id: "created_by",
+                },
+                {
+                    Header: "Fecha de creación",
+                    accessor: (row) =>
+                        row.created_at?.split("T")[0] ||
+                        row.date_paid?.split("T")[0] ||
+                        "—",
+                    id: "created_at",
+                },
+                {
+                    Header: "Modificado por",
+                    accessor: (row) => row.modified_by || "—",
+                    id: "modified_by",
+                },
+                {
+                    Header: "Fecha modif",
+                    accessor: (row) =>
+                        row.updated_at && row.updated_at !== row.created_at
+                            ? row.updated_at.split("T")[0]
+                            : "—",
+                    id: "updated_at",
+                },
+            ]
+            : []),
         {
             Header: "Acciones",
             accessor: "actions",
             disableSortBy: true,
             Cell: ({ row }) => (
-                <>
-                    <Button color="info" size="sm" className="btn-icon btn-link" onClick={() => handleEditar(row.original)}><i className="fa fa-edit" /></Button>
-                </>
-            )
-        }
+                <Button
+                    color="info"
+                    size="sm"
+                    className="btn-icon btn-link"
+                    onClick={() => handleEditar(row.original)}
+                >
+                    <i className="fa fa-edit" />
+                </Button>
+            ),
+        },
     ];
 
     const formatMes = (isoStr) => {
@@ -138,39 +170,83 @@ export default function PagosTabla() {
                         <CardTitle tag="h4">Historial de Pagos</CardTitle>
                     </CardHeader>
                     <CardBody>
-                        <Row className="mb-3">
+                        <Row className="mb-4">
                             <Col md="6">
-                                <Form inline>
-                                    <FormGroup className="d-flex align-items-center">
-                                        <Col>
-                                            <Label for="mesFiltro" className="me-2" style={{ fontSize: '1.1rem', fontWeight: 'bold' }}>Filtrar por mes:</Label>
+                                <Form>
+                                    <FormGroup className="d-flex flex-column gap-2">
+                                        <Label style={{ fontSize: '1rem', fontWeight: '600' }}>
+                                            Filtro de búsqueda
+                                        </Label>
+                                        <div className="d-flex gap-2 align-items-center">
                                             <Input
                                                 type="select"
-                                                id="mesFiltro"
-                                                value={filtroMes}
-                                                onChange={(e) => handleChangeMes(e.target.value)}
+                                                value={modoFiltro}
+                                                onChange={(e) => {
+                                                    setModoFiltro(e.target.value);
+                                                    setPagos([]);
+                                                }}
+                                                style={{ maxWidth: "140px" }}
                                             >
-                                                {mesesDisponibles.map(mes => (
-                                                    <option key={mes} value={mes}>{formatMes(mes)}</option>
-                                                ))}
+                                                <option value="mes">Por mes</option>
+                                                <option value="dia">Por día</option>
                                             </Input>
-                                        </Col>
+
+                                            {modoFiltro === "mes" ? (
+                                                <Input
+                                                    type="select"
+                                                    value={filtroMes}
+                                                    onChange={(e) => {
+                                                        setFiltroMes(e.target.value);
+                                                        fetchPagos(e.target.value, "mes");
+                                                    }}
+                                                    className="flex-grow-1"
+                                                >
+                                                    {mesesDisponibles.map(mes => (
+                                                        <option key={mes} value={mes}>
+                                                            {formatMes(mes)}
+                                                        </option>
+                                                    ))}
+                                                </Input>
+                                            ) : (
+                                                <Input
+                                                    type="date"
+                                                    value={filtroDia}
+                                                    onChange={(e) => {
+                                                        setFiltroDia(e.target.value);
+                                                        fetchPagos(e.target.value, "dia");
+                                                    }}
+                                                    className="flex-grow-1"
+                                                />
+                                            )}
+                                        </div>
                                     </FormGroup>
                                 </Form>
                             </Col>
+
+                            <Button
+                                color="info"
+                                outline
+                                size="sm"
+                                onClick={() => setMostrarAuditoria(!mostrarAuditoria)}
+                            >
+                                {mostrarAuditoria ? "Ocultar detalles" : "Mostrar detalles"}
+                            </Button>
+
                         </Row>
 
                         {pagos.length > 0 ? (
-                            <ReactTable
-                                data={pagos}
-                                columns={columns}
-                                className="-striped -highlight primary-pagination"
-                                loading={loading}
-                            />
-                        ) : !loading && filtroMes ? (
+                            <>
+                                <ReactTable
+                                    data={pagos}
+                                    columns={columns}
+                                    className="-striped -highlight primary-pagination"
+                                    loading={loading} /></>
+                        ) : !loading && (filtroMes || filtroDia) ? (
                             <div className="text-center text-muted p-4 border border-2 rounded">
                                 <i className="nc-icon nc-money-coins" style={{ fontSize: '2rem' }}></i>
-                                <p className="mt-2 mb-0">No hay pagos registrados para este mes.</p>
+                                <p className="mt-2 mb-0">
+                                    No hay pagos registrados para este {modoFiltro === 'mes' ? 'mes' : 'día'}.
+                                </p>
                             </div>
                         ) : null}
                     </CardBody>
@@ -179,7 +255,7 @@ export default function PagosTabla() {
                     isOpen={editModalOpen}
                     toggle={() => setEditModalOpen(false)}
                     payment={selectedPayment}
-                    onUpdated={() => fetchPagos(filtroMes)}
+                    onUpdated={() => fetchPagos(modoFiltro === "mes" ? filtroMes : filtroDia, modoFiltro)}
                 />
             </div>
         </>

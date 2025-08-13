@@ -1,13 +1,35 @@
 import React, { useEffect, useState, useCallback } from "react";
-import { Card, CardBody, CardFooter, CardTitle, Row, Col, Table, Button } from "reactstrap";
-import { getMonthlyRevenue, getTotalRevenue, getTodayRevenue, recalculateAllRevenue } from "../Payments/service/paymentsService";
+import {
+  Card, CardBody, CardFooter, CardTitle, Row, Col, Table, Button
+} from "reactstrap";
+import {
+  getMonthlyRevenue,
+  getTotalRevenue,
+  getTodayRevenue,
+  recalculateAllRevenue
+} from "../Payments/service/paymentsService";
+import { fetchAllPayments } from "../Clients/service/paymentsService";
 import { getClientsCount } from "../Clients/service/clientsService";
 import { fetchAllBookings } from "../Bookings/service/bookingService";
 import dayjs from "dayjs";
+import { Line } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  LineElement,
+  PointElement,
+  LinearScale,
+  CategoryScale,
+  Tooltip,
+  Legend
+} from "chart.js";
+
+ChartJS.register(LineElement, PointElement, LinearScale, CategoryScale, Tooltip, Legend);
 
 const DashboardStats = () => {
   const [monthlyRevenueTable, setMonthlyRevenueTable] = useState([]);
   const [totalRevenueAllTime, setTotalRevenueAllTime] = useState(0);
+  const [dailyRevenueTable, setDailyRevenueTable] = useState([]);
+  const [dailyChartData, setDailyChartData] = useState(null);
   const [stats, setStats] = useState({
     totalRevenue: 0,
     activeClients: 0,
@@ -17,12 +39,20 @@ const DashboardStats = () => {
   });
 
   const fetchStats = useCallback(async () => {
-    const [revenues, totalRevenue, clientCounts, bookings, todayRevenueData] = await Promise.all([
+    const [
+      revenues,
+      totalRevenue,
+      clientCounts,
+      bookings,
+      todayRevenueData,
+      allPayments
+    ] = await Promise.all([
       getMonthlyRevenue(),
       getTotalRevenue(),
       getClientsCount(),
       fetchAllBookings(),
       getTodayRevenue(),
+      fetchAllPayments()
     ]);
 
     const currentMonth = dayjs().month();
@@ -48,6 +78,39 @@ const DashboardStats = () => {
       newClients: clientCounts.new_this_month,
       todayRevenue: todayRevenueData.total || 0
     });
+
+    const dailyGrouped = {};
+    allPayments.forEach(p => {
+      const date = p.date_paid?.split("T")[0];
+      if (!date) return;
+      if (!dailyGrouped[date]) {
+        dailyGrouped[date] = { total: 0, count: 0 };
+      }
+      dailyGrouped[date].total += parseFloat(p.amount || 0);
+      dailyGrouped[date].count += 1;
+    });
+
+    const dailyRows = Object.entries(dailyGrouped)
+      .map(([date, { count, total }]) => ({ date, count, total }))
+      .sort((a, b) => b.date.localeCompare(a.date));
+
+    setDailyRevenueTable(dailyRows);
+
+    const last15Days = dailyRows.slice(0, 15).reverse();
+    const chartLabels = last15Days.map(d => dayjs(d.date).format("DD/MM"));
+    const chartValues = last15Days.map(d => d.total);
+
+    setDailyChartData({
+      labels: chartLabels,
+      datasets: [{
+        label: "Ingresos diarios",
+        data: chartValues,
+        fill: false,
+        borderColor: "#2CA8FF",
+        backgroundColor: "#2CA8FF",
+        tension: 0.4,
+      }],
+    });
   }, []);
 
   useEffect(() => {
@@ -67,42 +130,25 @@ const DashboardStats = () => {
     <>
       <Row className="mb-3">
         <Col>
-          <Button style={{ backgroundColor: "#7F6552", color: "white", borderColor: "#7F6552" }}
-                  onMouseEnter={(e) => { e.target.style.backgroundColor = "#7F6552"; }}
-                  onMouseLeave={(e) => { e.target.style.backgroundColor = "#7F6552"; }} onClick={handleRecalculate}>
+          <Button
+            style={{
+              backgroundColor: "#7F6552",
+              color: "white",
+              borderColor: "#7F6552"
+            }}
+            onMouseEnter={(e) => { e.target.style.backgroundColor = "#7F6552"; }}
+            onMouseLeave={(e) => { e.target.style.backgroundColor = "#7F6552"; }}
+            onClick={handleRecalculate}
+          >
             Refrescar Datos
           </Button>
         </Col>
       </Row>
+
+      <Row className="mt-4">
+        <Col lg="12"><h4>Resumen Diario</h4></Col>
+      </Row>
       <Row>
-        <Col lg="3" md="6" sm="6">
-          <Card className="card-stats">
-            <CardBody>
-              <div className="numbers text-center">
-                <p className="card-category">Ingresos totales</p>
-                <CardTitle tag="p">
-                  Q {Number(totalRevenueAllTime) > 0 ? Number(totalRevenueAllTime).toFixed(2) : "0.00"}
-                </CardTitle>
-              </div>
-            </CardBody>
-            <CardFooter>
-              <div className="stats">Histórico</div>
-            </CardFooter>
-          </Card>
-        </Col>
-        <Col lg="3" md="6" sm="6">
-          <Card className="card-stats">
-            <CardBody>
-              <div className="numbers text-center">
-                <p className="card-category">Clientes activos</p>
-                <CardTitle tag="p">{stats.activeClients}</CardTitle>
-              </div>
-            </CardBody>
-            <CardFooter>
-              <div className="stats">Con membresía</div>
-            </CardFooter>
-          </Card>
-        </Col>
         <Col lg="3" md="6" sm="6">
           <Card className="card-stats">
             <CardBody>
@@ -111,35 +157,7 @@ const DashboardStats = () => {
                 <CardTitle tag="p">{stats.todayBookings}</CardTitle>
               </div>
             </CardBody>
-            <CardFooter>
-              <div className="stats">Reservas de hoy</div>
-            </CardFooter>
-          </Card>
-        </Col>
-        <Col lg="3" md="6" sm="6">
-          <Card className="card-stats">
-            <CardBody>
-              <div className="numbers text-center">
-                <p className="card-category">Nuevos este mes</p>
-                <CardTitle tag="p">{stats.newClients}</CardTitle>
-              </div>
-            </CardBody>
-            <CardFooter>
-              <div className="stats">Clientes nuevos</div>
-            </CardFooter>
-          </Card>
-        </Col>
-        <Col lg="3" md="6" sm="6">
-          <Card className="card-stats">
-            <CardBody>
-              <div className="numbers text-center">
-                <p className="card-category">Ingresos del mes</p>
-                <CardTitle tag="p">Q {isNaN(stats.totalRevenue) ? "0.00" : stats.totalRevenue.toFixed(2)}</CardTitle>
-              </div>
-            </CardBody>
-            <CardFooter>
-              <div className="stats">Actualizado</div>
-            </CardFooter>
+            <CardFooter><div className="stats">Reservas</div></CardFooter>
           </Card>
         </Col>
         <Col lg="3" md="6" sm="6">
@@ -150,17 +168,115 @@ const DashboardStats = () => {
                 <CardTitle tag="p">Q {isNaN(stats.todayRevenue) ? "0.00" : stats.todayRevenue.toFixed(2)}</CardTitle>
               </div>
             </CardBody>
-            <CardFooter>
-              <div className="stats">Actualizado</div>
-            </CardFooter>
+            <CardFooter><div className="stats">Actualizado</div></CardFooter>
           </Card>
         </Col>
       </Row>
+
+      <Row className="mt-4">
+        <Col lg="12"><h4>Resumen Mensual</h4></Col>
+      </Row>
+      <Row>
+        <Col lg="3" md="6" sm="6">
+          <Card className="card-stats">
+            <CardBody>
+              <div className="numbers text-center">
+                <p className="card-category">Ingresos del mes</p>
+                <CardTitle tag="p">Q {isNaN(stats.totalRevenue) ? "0.00" : stats.totalRevenue.toFixed(2)}</CardTitle>
+              </div>
+            </CardBody>
+            <CardFooter><div className="stats">Actualizado</div></CardFooter>
+          </Card>
+        </Col>
+        <Col lg="3" md="6" sm="6">
+          <Card className="card-stats">
+            <CardBody>
+              <div className="numbers text-center">
+                <p className="card-category">Clientes activos</p>
+                <CardTitle tag="p">{stats.activeClients}</CardTitle>
+              </div>
+            </CardBody>
+            <CardFooter><div className="stats">Con membresía</div></CardFooter>
+          </Card>
+        </Col>
+        <Col lg="3" md="6" sm="6">
+          <Card className="card-stats">
+            <CardBody>
+              <div className="numbers text-center">
+                <p className="card-category">Nuevos este mes</p>
+                <CardTitle tag="p">{stats.newClients}</CardTitle>
+              </div>
+            </CardBody>
+            <CardFooter><div className="stats">Clientes nuevos</div></CardFooter>
+          </Card>
+        </Col>
+        <Col lg="3" md="6" sm="6">
+          <Card className="card-stats">
+            <CardBody>
+              <div className="numbers text-center">
+                <p className="card-category">Ingresos totales</p>
+                <CardTitle tag="p">
+                  Q {Number(totalRevenueAllTime) > 0 ? Number(totalRevenueAllTime).toFixed(2) : "0.00"}
+                </CardTitle>
+              </div>
+            </CardBody>
+            <CardFooter><div className="stats">Histórico</div></CardFooter>
+          </Card>
+        </Col>
+      </Row>
+
+      <Row className="mt-4">
+        <Col lg="12"><h4>Ingresos por Día</h4></Col>
+      </Row>
+      <Row>
+        <Col lg="12">
+          <Card>
+            <CardBody>
+              <Table responsive striped>
+                <thead>
+                  <tr>
+                    <th>Fecha</th>
+                    <th># Pagos</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {dailyRevenueTable.map((item, index) => (
+                    <tr key={index}>
+                      <td>{dayjs(item.date).format("DD/MM/YYYY")}</td>
+                      <td>{item.count}</td>
+                      <td>Q {parseFloat(item.total).toFixed(2)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </Table>
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
+
       <Row className="mt-4">
         <Col lg="12">
           <Card>
             <CardBody>
-              <h5 className="card-title">Ingresos por mes</h5>
+              <h5 className="card-title">Ingresos últimos 15 días</h5>
+              {dailyChartData ? (
+                <Line data={dailyChartData} />
+              ) : (
+                <p>Cargando gráfica...</p>
+              )}
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
+
+      <Row className="mt-4">
+        <Col lg="12"><h4>Ingresos por Mes</h4></Col>
+      </Row>
+      <Row>
+        <Col lg="12">
+          <Card>
+            <CardBody>
               <Table responsive striped>
                 <thead>
                   <tr>

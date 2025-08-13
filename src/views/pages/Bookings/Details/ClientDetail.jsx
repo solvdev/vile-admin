@@ -7,6 +7,7 @@ import {
   Row,
   Col,
   Table,
+  Badge
 } from 'reactstrap';
 import ReactLoading from 'react-loading';
 import { Toaster } from 'react-hot-toast';
@@ -14,11 +15,11 @@ import { overlayStyles, loaderContainerStyles } from 'styles/commonStyles';
 
 import { handleApiError } from 'utils/ErrorHandler';
 import { useNotifications } from 'hooks/useNotifications';
-import { fetchClientById, createClient, updateClient } from '../service/clientsService';
-import { createPayment, fetchPaymentsByClient } from '../service/paymentsService';
-import { fetchAllMemberships } from '../service/membershipService';
+import { fetchClientById, createClient, updateClient } from 'views/pages/Clients/service/clientsService';
+import { createPayment, fetchPaymentsByClient } from 'views/pages/Clients/service/paymentsService';
+import { fetchAllMemberships } from 'views/pages/Clients/service/membershipService';
 
-const ClientDetail = ({ client, onClientUpdated, mode = "view" }) => {
+const ClientDetail = ({ client, onClientUpdated, mode = "view", classHistory = [] }) => {
   const [loading, setLoading] = useState(false);
   const [memberships, setMemberships] = useState([]);
   const [selectedMembership, setSelectedMembership] = useState(null);
@@ -90,6 +91,25 @@ const ClientDetail = ({ client, onClientUpdated, mode = "view" }) => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  const handleUpdateMembership = async () => {
+  if (!localClient.active_membership) return;
+  setLoading(true);
+  try {
+    await api.updateMembership(localClient.active_membership.id, {
+      remaining_classes: parseInt(localClient.active_membership.remaining_classes),
+      start_date: localClient.active_membership.start_date,
+      end_date: localClient.active_membership.end_date
+    });
+    await fetchData();
+    toast.success('Membresía actualizada');
+  } catch (err) {
+    handleApiError(err);
+    toast.error('Error al actualizar membresía');
+  } finally {
+    setLoading(false);
+  }
+};
+
   const handleSaveClient = async () => {
     setLoading(true);
     try {
@@ -133,7 +153,7 @@ const ClientDetail = ({ client, onClientUpdated, mode = "view" }) => {
   };
 
   const notificationMessages = {
-    success: 'Membresías cargadas exitosamente.',
+    success: 'Datos cargados exitosamente.',
     error: (e) => e.message || 'Error al cargar datos.',
   };
   useNotifications(success, error, notificationMessages);
@@ -161,6 +181,60 @@ const ClientDetail = ({ client, onClientUpdated, mode = "view" }) => {
               <p><strong>Estado:</strong> {localClient.status === 'A' ? 'Activo' : 'Inactivo'}</p>
               <p><strong>Clase de Prueba:</strong> {localClient.trial_used ? 'Usada' : 'Disponible'}</p>
               <p><strong>Membresía Activa:</strong> {localClient.active_membership ? localClient.active_membership.name : 'Sin membresía activa'}</p>
+              {localClient.active_membership && (
+                <>
+                  <hr />
+                  <h5>Editar Paquete Activo</h5>
+                  <FormGroup>
+                    <Label>Clases Pendientes</Label>
+                    <Input
+                      type="number"
+                      value={localClient.active_membership.remaining_classes}
+                      onChange={(e) => setLocalClient(prev => ({
+                        ...prev,
+                        active_membership: {
+                          ...prev.active_membership,
+                          remaining_classes: e.target.value
+                        }
+                      }))}
+                    />
+                  </FormGroup>
+                  <FormGroup>
+                    <Label>Fecha de Inicio</Label>
+                    <Input
+                      type="date"
+                      value={localClient.active_membership.start_date}
+                      onChange={(e) => setLocalClient(prev => ({
+                        ...prev,
+                        active_membership: {
+                          ...prev.active_membership,
+                          start_date: e.target.value
+                        }
+                      }))}
+                    />
+                  </FormGroup>
+                  <FormGroup>
+                    <Label>Fecha de Vencimiento</Label>
+                    <Input
+                      type="date"
+                      value={localClient.active_membership.end_date}
+                      onChange={(e) => setLocalClient(prev => ({
+                        ...prev,
+                        active_membership: {
+                          ...prev.active_membership,
+                          end_date: e.target.value
+                        }
+                      }))}
+                    />
+                  </FormGroup>
+                  <Button
+                    color="primary"
+                    onClick={handleUpdateMembership}
+                  >
+                    Guardar Cambios de Paquete
+                  </Button>
+                </>
+              )}
             </>
           ) : (
             <>
@@ -182,7 +256,7 @@ const ClientDetail = ({ client, onClientUpdated, mode = "view" }) => {
               </FormGroup>
               <FormGroup>
                 <Label>No. DPI</Label>
-                <Input name="phone" value={formData.dpi} onChange={handleInputChange} disabled={formData.dpi ? true : false}/>
+                <Input name="phone" value={formData.dpi} onChange={handleInputChange} disabled={formData.dpi ? true : false} />
               </FormGroup>
               <FormGroup>
                 <Label>Edad</Label>
@@ -276,6 +350,47 @@ const ClientDetail = ({ client, onClientUpdated, mode = "view" }) => {
                       <td>Q{parseFloat(payment.amount).toFixed(2)}</td>
                       <td>{new Date(payment.date_paid).toLocaleString()}</td>
                       <td>{new Date(payment.valid_until).toLocaleDateString()}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </Table>
+            )}
+          </Col>
+          <Col md="12">
+            <h5>Historial de Asistencias</h5>
+            {classHistory.length === 0 ? (
+              <p>No hay clases registradas aún.</p>
+            ) : (
+              <Table bordered responsive hover>
+                <thead className="thead-light">
+                  <tr>
+                    <th>Fecha</th>
+                    <th>Horario</th>
+                    <th>Membresía</th>
+                    <th>Asistencia</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {classHistory.map((item, idx) => (
+                    <tr key={idx}>
+                      <td>{item.class_date}</td>
+                      <td>{item.schedule}</td>
+                      <td>{item.membership || "—"}</td>
+                      <td>
+                        <Badge color={{
+                          attended: "success",
+                          no_show: "danger",
+                          pending: "warning",
+                          cancelled: "secondary"
+                        }[item.attendance_status?.toLowerCase()] || "dark"}>
+                          {{
+                            attended: "Asistió",
+                            no_show: "No asistió",
+                            pending: "Pendiente",
+                            cancelled: "Cancelada"
+                          }[item.attendance_status?.toLowerCase()] || "Desconocido"}
+                        </Badge>
+                      </td>
                     </tr>
                   ))}
                 </tbody>

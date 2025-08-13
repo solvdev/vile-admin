@@ -30,6 +30,11 @@ export const getPaymentsByMonth = async (mes) => {
   return response.data;
 };
 
+export const getPaymentsByDate = async (dia) => {
+  const response = await getData("GET", `${BASE_URL}?date=${dia}`);
+  return response.data;
+};
+
 // Obtener pagos por cliente
 export const getPaymentsByClient = async (clientId) => {
   const response = await getData("GET", BASE_URL + `?client=${clientId}`);

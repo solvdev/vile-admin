@@ -161,7 +161,7 @@ const routes = [
         mini: "P",
         component: <PagosTabla />,
         layout: "/admin",
-        roles: ["admin"],
+        roles: ["admin", "secretaria"],
       },
       {
         path: "/registrar-pagos",
